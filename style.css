@@ -1,0 +1,304 @@
+@import 'https://fonts.googleapis.com/css?family=Blinker';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eee;
+  font-family: Blinker;
+}
+#page-wrapper{
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+header {
+  position: relative;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(165, 53, 206, 0.8);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;  
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  
+nav li {
+    padding-bottom: 5px;
+    }
+}
+
+nav a{
+  color: rgba(73, 251, 53);
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 125px;
+  width: 20vw;
+  color: rgb(165, 53, 206);
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#demo-video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#demo-video > p{
+  color: purple;
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+#demo-video > iframe{
+  margin: auto;
+}
+
+#email-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+#email-form > h2{
+  font-size: 35px;
+  margin-bottom: 25px;
+  word-wrap: break-word;
+  color: rgb(165, 53, 206);
+}
+
+#email-form input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 10px;
+}
+
+#email-form input[type='submit'] {
+  max-width: 170px;
+  width: 100%;
+  height: 35px;
+  margin: 15px 0;
+  border: 0;
+  background-color: rgb(165, 53, 206);
+}
+
+#email-form input[type='submit']:hover{
+  background-color: rgba(73, 251, 53);
+  transition: background-color 1.5s;
+}
+
+@media (max-width: 650px) {
+  #email-form{
+    margin-top: 120px;
+  }
+}
+
+#plans {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.product > .level {
+  background-color: purple;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: purple;
+  font-weight: 400;
+  color: white;
+}
+
+.product > button:hover {
+  background-color: rgba(73, 251, 53);
+  transition: background-color 1.5s;
+}
+
+@media (max-width: 800px) {
+  #plans {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+ }
